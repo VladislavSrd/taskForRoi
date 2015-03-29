@@ -17,7 +17,6 @@ namespace taskForROI.Account
             var signInManager = Context.GetOwinContext().Get<ApplicationSignInManager>();
             var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text};
             IdentityResult result = manager.Create(user, Password.Text);
-            manager.AddPassword(user.Id, Password.Text);
             if (result.Succeeded)
             {
                 signInManager.SignIn( user, isPersistent: false, rememberBrowser: false);

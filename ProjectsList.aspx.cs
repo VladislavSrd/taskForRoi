@@ -13,8 +13,28 @@ namespace taskForROI
         {
             if (!User.Identity.IsAuthenticated)
             {
-                Response.Redirect("~/account/Login.aspx");
+                Response.Redirect("~/account/Login.aspx?ReturnUrl=~/ProjectsList.aspx");
             }
         }
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if ((e.CommandName == "Insert") && (Page.IsValid))
+            {
+                ProjectsSDS.InsertParameters["Name"].DefaultValue =
+                    ((TextBox)GridView1.FooterRow.FindControl("addName")).Text;
+                ProjectsSDS.InsertParameters["StartDate"].DefaultValue =
+                    ((TextBox)GridView1.FooterRow.FindControl("addStartDate")).Text;
+                ProjectsSDS.InsertParameters["EndDate"].DefaultValue =
+                    ((TextBox)GridView1.FooterRow.FindControl("addEndDate")).Text;
+                ProjectsSDS.InsertParameters["EstimatedRevenue"].DefaultValue =
+                    ((TextBox)GridView1.FooterRow.FindControl("addEstimatedRevenue")).Text;
+                ProjectsSDS.Insert();
+            }
+            else if (e.CommandName == "Edit")
+            {
+            }
+            
+        }
+
     }
 }

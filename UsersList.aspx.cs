@@ -13,7 +13,7 @@ namespace taskForROI
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!User.Identity.IsAuthenticated){
-                Response.Redirect("~/account/Login.aspx");
+                Response.Redirect("~/account/Login.aspx?ReturnUrl=~/UsersList.aspx");
             }
         }
 

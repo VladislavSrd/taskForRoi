@@ -49,7 +49,7 @@ namespace taskForROI.Account
                         break;
                     case SignInStatus.Failure:
                     default:
-                        FailureText.Text = "Invalid login attempt";
+                        FailureText.Text = "Ошибка входа";
                         ErrorMessage.Visible = true;
                         break;
                 }

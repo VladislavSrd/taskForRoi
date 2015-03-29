@@ -5,7 +5,6 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="UserId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />

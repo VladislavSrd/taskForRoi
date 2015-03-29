@@ -47,6 +47,4 @@ D:\vladislav\documents\Visual Studio 2013\Projects\Балса\taskForROI\taskFor
 D:\vladislav\documents\Visual Studio 2013\Projects\Балса\taskForROI\taskForROI\bin\Microsoft.Owin.Security.OAuth.xml
 D:\vladislav\documents\Visual Studio 2013\Projects\Балса\taskForROI\taskForROI\obj\Debug\taskForROI.dll
 D:\vladislav\documents\Visual Studio 2013\Projects\Балса\taskForROI\taskForROI\obj\Debug\taskForROI.pdb
-D:\vladislav\documents\Visual Studio 2013\Projects\Балса\taskForROI\taskForROI\obj\Debug\taskForROI.Migrations.InitialCreate.resources
-D:\vladislav\documents\Visual Studio 2013\Projects\Балса\taskForROI\taskForROI\obj\Debug\taskForROI.csproj.GenerateResource.Cache
 D:\vladislav\documents\Visual Studio 2013\Projects\Балса\taskForROI\taskForROI\obj\Debug\taskForROI.csprojResolveAssemblyReference.cache

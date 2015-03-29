@@ -16,12 +16,10 @@ namespace taskForROI.Models
     // You can add User data for the user by adding more properties to your User class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
-
-        public string UserId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public override string Id { get { return UserId; } set { UserId = value; } }
+        public override string Id { get; set; }
         public override string PasswordHash { get; set; }
         public override string UserName { get; set; }
 
